@@ -32,9 +32,11 @@ while (count <= gridWidth * gridWidth) {
 
 // Add queries for all your squares, palette colors, and brush here.
 // (Note the singular or plural used in that sentence!)
-
-
-
+const first = document.querySelector('.palette-color color-1')
+const second = document.querySelector('.palette-color color-2')
+const third = document.querySelector('.palette-color color-3')
+const fourth = document.querySelector('.palette-color color-4')
+const fifth = document.querySelector('.palette-color color-5')
 /****************************
  * EVENT LISTENER FUNCTIONS *
 ****************************/
