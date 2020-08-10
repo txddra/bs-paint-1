@@ -32,11 +32,19 @@ while (count <= gridWidth * gridWidth) {
 
 // Add queries for all your squares, palette colors, and brush here.
 // (Note the singular or plural used in that sentence!)
+
+/*colors */
 const first = document.querySelector('.palette-color color-1')
 const second = document.querySelector('.palette-color color-2')
 const third = document.querySelector('.palette-color color-3')
 const fourth = document.querySelector('.palette-color color-4')
 const fifth = document.querySelector('.palette-color color-5')
+
+/* the current color*/
+const current = document.querySelector('.current-brush')
+
+/*the square to be colored, 'the canvas'*/
+const square = document.querySelectorAll('.square')
 /****************************
  * EVENT LISTENER FUNCTIONS *
 ****************************/
@@ -47,7 +55,7 @@ const fifth = document.querySelector('.palette-color color-5')
 // run as event listeners (after the next step is set up) isn't a
 // bad idea for testing purposes.
 
-
+/* */
 
 /**************************
  * WIRING IT ALL TOGETHER *
