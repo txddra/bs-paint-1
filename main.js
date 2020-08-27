@@ -36,9 +36,9 @@ while (count <= gridWidth * gridWidth) {
 /*colors */
 const first = document.querySelector('.palette-color.color-1')
 const second = document.querySelector('.palette-color.color-2')
-const third = document.querySelector('.palette-color color-3')
-const fourth = document.querySelector('.palette-color color-4')
-const fifth = document.querySelector('.palette-color color-5')
+const third = document.querySelector('.palette-color.color-3')
+const fourth = document.querySelector('.palette-color.color-4')
+const fifth = document.querySelector('.palette-color.color-5')
 
 /* the current color*/
 const current = document.querySelector('.current-brush')
@@ -103,7 +103,24 @@ const fifthColor = function () {
 //we make a new name for the event listener, add it, and call it with a click, and this will change the color of the square with the paintbrush
 
 /* first*/
-first.addEventListener('click', firstColor)
+first.addEventListener('click', firstColor);
 
 /*second*/
-second.addEventListener('click', secondColor)
+second.addEventListener('click', secondColor);
+
+/*third*/
+third.addEventListener('click', thirdColor);
+
+/*fourth*/
+fourth.addEventListener('click',fourthColor);
+
+/*fifth*/
+fifth.addEventListener('click',fifthColor);
+
+const clickColor = function(event){
+  event.target.classList.remove(event.target.classList[1]);
+  event.target.classList.add(currentColor.classList[1]);
+}
+for (const element of square){
+element.addEventListener('click',clickColor);
+}
