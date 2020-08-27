@@ -99,8 +99,16 @@ const fifthColor = function () {
 // square and for each palette color from the functions you
 // wrote above.
 
+const clickColor = function(event){
+  event.target.classList.remove(event.target.classList[1]);
+  event.target.classList.add(current.classList[1]);
+}
+for (const element of square){
+element.addEventListener('click',clickColor);
+}
 
 //we make a new name for the event listener, add it, and call it with a click, and this will change the color of the square with the paintbrush
+
 
 /* first*/
 first.addEventListener('click', firstColor);
@@ -117,10 +125,3 @@ fourth.addEventListener('click',fourthColor);
 /*fifth*/
 fifth.addEventListener('click',fifthColor);
 
-const clickColor = function(event){
-  event.target.classList.remove(event.target.classList[1]);
-  event.target.classList.add(currentColor.classList[1]);
-}
-for (const element of square){
-element.addEventListener('click',clickColor);
-}
