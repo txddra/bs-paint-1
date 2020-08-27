@@ -55,7 +55,13 @@ const square = document.querySelectorAll('.square')
 // run as event listeners (after the next step is set up) isn't a
 // bad idea for testing purposes.
 
-/* */
+/* functions that will remove the current color and replace with the color chosen*/
+
+const firstColor  = function(){
+  // removes the color previously selected
+  current.classList.remove(current.classList[1])
+  // adds the color clicked on
+  current.classList.add('color-1')
 
 /**************************
  * WIRING IT ALL TOGETHER *
