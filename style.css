@@ -4,12 +4,31 @@
   height: 500px;
   align-items: center;
   justify-content: space-between;
+  background-image: linear-gradient(lavender, plum, paleturquoise);
 }
 
 .headings {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* heading 'bs paint' */
+h3 {
+  font-size: 40px;
+  font-family: monospace;
+  text-shadow: 2px 2px 2px whitesmoke;
+  border: 3px dotted rebeccapurple;
+  color: violet;
+
+}
+
+/* 'paint away' */
+.message {
+  font-family: cursive;
+  color: rgb(225, 135, 255);
+  text-shadow: 1px 2px 3px ivory;
+  font-size: 35px;
 }
 
 .size {
@@ -52,7 +71,8 @@
   height: 30px;
 }
 
-.current-brush, .palette-color {
+.current-brush,
+.palette-color {
   width: 30px;
   height: 30px;
   border: 1px solid black;
@@ -71,7 +91,7 @@
 .square {
   transition: 0.5s;
 }
- 
+
 
 /* changing the colors */
 .color-1 {
@@ -91,5 +111,5 @@
 }
 
 .color-5 {
-  background-color:lavender ;
+  background-color: white;
 }
