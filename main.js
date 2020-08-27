@@ -34,8 +34,8 @@ while (count <= gridWidth * gridWidth) {
 // (Note the singular or plural used in that sentence!)
 
 /*colors */
-const first = document.querySelector('.palette-color color-1')
-const second = document.querySelector('.palette-color color-2')
+const first = document.querySelector('.palette-color.color-1')
+const second = document.querySelector('.palette-color.color-2')
 const third = document.querySelector('.palette-color color-3')
 const fourth = document.querySelector('.palette-color color-4')
 const fifth = document.querySelector('.palette-color color-5')
@@ -62,7 +62,7 @@ const firstColor  = function(){
   current.classList.remove(current.classList[1])
   // adds the color clicked on
   current.classList.add('color-1')
-
+}
 /**************************
  * WIRING IT ALL TOGETHER *
 **************************/
@@ -71,3 +71,7 @@ const firstColor  = function(){
 // You'll need to add the appropriate event listener for each
 // square and for each palette color from the functions you
 // wrote above.
+  
+
+//we make a new name for the event listener, add it, and call it with a click
+first.addEventListener('click', firstColor)
