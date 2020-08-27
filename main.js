@@ -57,12 +57,35 @@ const square = document.querySelectorAll('.square')
 
 /* functions that will remove the current color and replace with the color chosen*/
 
+/*first*/
 const firstColor  = function(){
   // removes the color previously selected
-  current.classList.remove(current.classList[1])
+  current.classList.remove(current.classList[1]);
   // adds the color clicked on
   current.classList.add('color-1')
 }
+
+/*second*/
+const secondColor = function(){
+  current.classList.remove(current.classList[1])
+  current.classList.add('color-2')
+}
+
+
+/*third*/
+const thirdColor = function(){
+current.classList.remove(current.classList[1])
+current.classList.add('color-3')
+}
+
+
+/*fourth*/
+const fourthColor = function(){
+  current.classList.remove(current.classList[1])
+  current.classList.add('color-4')
+}
+
+/*fifth*/
 /**************************
  * WIRING IT ALL TOGETHER *
 **************************/
@@ -73,5 +96,10 @@ const firstColor  = function(){
 // wrote above.
   
 
-//we make a new name for the event listener, add it, and call it with a click
+//we make a new name for the event listener, add it, and call it with a click, and this will change the color of the square with the paintbrush
+
+/* first*/
 first.addEventListener('click', firstColor)
+
+/*second*/
+second.addEventListener('click', secondColor)
